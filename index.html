@@ -4,61 +4,116 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>umt_practice</title>
+    <title>Flora</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" crossorigin href="/UMT-markup-practice-Dymchevskyi/assets/index-D9_0uopp.css">
+    <script type="module" crossorigin src="/UMT-markup-practice-Dymchevskyi/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/UMT-markup-practice-Dymchevskyi/assets/index-CPVVoM8S.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
     <nav class="nav">
-      <a href="" class="nav-logo_link"
-        ><img src="" alt="" class="nav-logo"
-      /></a>
-      <ul class="nav-list">
-        <li class="nav-item"><a href="" class="nav-link">About Us</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Bestsellers</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Bouquets</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Feedback</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Contacts</a></li>
-      </ul>
-      <button type="button" class="nav-btn">Explore Bouquets</button>
+      <a href="index.html" class="nav-logo_link">
+        <img
+          src="../img/logo-white-theme.png"
+          alt="Flora Logo"
+          class="nav-logo"
+        />
+      </a>
+
+      <div class="nav-content">
+        <div class="menu-container">
+          <div class="menu-header">
+            <img
+              src="../img/logo-white-theme.png"
+              alt="Flora Logo"
+              class="nav-logo menu-logo"
+            />
+            <button type="button" class="modal-close_btn">
+              <svg class="modal-close-svg">
+                <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#bestsellers" class="nav-link">Bestsellers</a>
+            </li>
+            <li class="nav-item">
+              <a href="#bouquets" class="nav-link">Bouquets</a>
+            </li>
+            <li class="nav-item">
+              <a href="#feedback" class="nav-link">Feedback</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+
+          <button type="button" class="nav-btn btn nav-btn--mobile">
+            Explore Bouquets
+          </button>
+        </div>
+        <button type="button" class="nav-btn btn nav-btn--desktop">
+          Explore Bouquets
+        </button>
+
+        <button type="button" class="modal-open_btn">
+          <svg class="modal-open-svg">
+            <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
     </nav>
   </div>
 </header>
 
     <main>
-      <section class="hero">
-  <div class="container">
+      <section class="hero" id="hero">
+  <div class="container hero-container">
     <h1 class="hero-header">Brighten Your Day with Our Stunning Bouquets</h1>
     <p class="hero-text">
       At Flora, we believe that every occasion deserves a beautiful bouquet. Our
       expertly crafted arrangements are designed to bring joy and elegance to
       your celebrations.
     </p>
-    <button type="button" class="hero-btn">Explore Our Bestsellers</button>
+    <button type="button" class="hero-btn btn">Explore Our Bestsellers</button>
   </div>
 </section>
 
-      <section class="about">
-  <div class="container">
-    <img src="" alt="" class="about-logo" />
-    <h2 class="about-header">Our Passion for Floral Artistry</h2>
-    <p class="about-text">
-      At Flora, we believe that every bouquet tells a story. Our team
-      meticulously crafts each arrangement, blending creativity with the
-      freshest blooms to create stunning pieces for every occasion.
-    </p>
-    <img src="" alt="" class="about-img" />
+      <section class="about section" id="about">
+  <div class="container about-container">
+    <div class="about-content">
+      <svg class="about-svg" aria-hidden="true">
+        <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-flower-logo"></use>
+      </svg>
+
+      <h2 class="about-header">Our Passion for Floral Artistry</h2>
+      <p class="about-text">
+        At Flora, we believe that every bouquet tells a story. Our team
+        meticulously crafts each arrangement, blending creativity with the
+        freshest blooms to create stunning pieces for every occasion.
+      </p>
+    </div>
+
+    <img
+      src="../img/about-image.jpg"
+      alt="photo of bouquet and our worker"
+      class="about-image"
+    />
   </div>
 </section>
 
-      <section class="bestsellers">
+      <section class="bestsellers section" id="bestsellers">
   <div class="container">
-    <h2 class="bestseller-header"></h2>
+    <h2 class="bestseller-header">Top-Selling Bouquets</h2>
     <ul class="bestseller-list">
       <li class="bestseller-item">
         <img src="" alt="" class="bestseller-item_img" />
@@ -97,26 +152,33 @@
         <p class="bestseller-item_price">&dollar;38</p>
       </li>
     </ul>
-    <div class="btn-slider_container">
-      <button type="button" class="btn-slider"></button
-      ><button type="button" class="btn-slider"></button
-      ><button type="button" class="btn-slider"></button
-      ><button type="button" class="btn-slider"></button
-      ><button type="button" class="btn-slider"></button>
-    </div>
-    <div class="btn-arrow_container">
-      <button type="button" class="btn-arrow">
-        <svg></svg>
-      </button>
-      <button type="button" class="btn-arrow">
-        <svg></svg>
-      </button>
+    <div class="navigation-container">
+      <ul class="slide-list">
+        <li class="slide-item slide-active"></li>
+        <li class="slide-item"></li>
+        <li class="slide-item"></li>
+        <li class="slide-item"></li>
+        <li class="slide-item"></li>
+        <li class="slide-item"></li>
+      </ul>
+      <div class="btn-arrow_container">
+        <button type="button" class="btn-arrow">
+          <svg class="arrow-svg">
+            <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button type="button" class="btn-arrow">
+          <svg class="arrow-svg">
+            <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>
 
-      <section class="bouqets">
-  <div class="container">
+      <section class="bouqets section" id="bouquets">
+  <div class="container bouqets-container">
     <h2 class="bouqets-header">Bouquets</h2>
     <p class="bouqets-text">
       Explore our stunning selection of fresh flower bouquets.
@@ -195,13 +257,13 @@
         <p class="bouqets-item_price">&dollar;35</p>
       </li>
     </ul>
-    <button type="button" class="bouqets-btn">Show More</button>
+    <button type="button" class="bouqets-btn btn">Show More</button>
   </div>
 </section>
 
-      <section class="feedback">
-  <div class="container">
-    <h2 class="feedback-header"></h2>
+      <section class="feedback section" id="feedback">
+  <div class="container feedback-container">
+    <h2 class="feedback-header">What our clients says</h2>
     <ul class="feedback-list">
       <li class="feedback-item">
         <p class="feedback-text">
@@ -231,37 +293,59 @@
         <p class="feedback-author">James L.</p>
       </li>
     </ul>
-    <div class="btn-arrow_container">
+    <div class="btn-arrow_container feedback-arrow_container">
       <button type="button" class="btn-arrow">
-        <svg></svg>
+        <svg class="arrow-svg">
+          <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-arrow-left"></use>
+        </svg>
       </button>
       <button type="button" class="btn-arrow">
-        <svg></svg>
+        <svg class="arrow-svg">
+          <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-arrow-right"></use>
+        </svg>
       </button>
     </div>
   </div>
 </section>
 
-      <section class="contacts">
-  <div class="container">
-    <p class="contacts-text">Connect</p>
-    <h2 class="contacts-header">Get in Touch</h2>
-    <p class="contacts-desciption">
-      We’re here to assist you with all your floral needs and inquiries.
-    </p>
-    <ul class="contacts-list">
-      <li class="contacts-item">
-        <p class="contacts-item-name">Phone</p>
-        <a href="" class="contacts-item_link">+1 (555) 123-4567</a>
-      </li>
-      <li class="contacts-item">
-        <p class="contacts-item-name">Store</p>
-        <a href="" class="contacts-item_link"
-          >456 Floral Ave, Sydney NSW 2000 AU</a
-        >
-      </li>
-    </ul>
-    <img src="" alt="" class="contacts-img" />
+      <section class="contacts section" id="contacts">
+  <div class="container contacts-container">
+    <div class="contacts-content">
+      <div class="contacts-text-container">
+        <p class="contacts-text">Connect</p>
+        <h2 class="contacts-header">Get in Touch</h2>
+        <p class="contacts-desciption">
+          We're here to assist you with all your floral needs and inquiries.
+        </p>
+      </div>
+
+      <ul class="contacts-list">
+        <li class="contacts-item">
+          <p class="contacts-item-name">
+            <svg class="modal-contacts-svg">
+              <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-phone"></use></svg
+            >Phone
+          </p>
+          <a href="" class="contacts-item_link phone-link">+1 (555) 123-4567</a>
+        </li>
+        <li class="contacts-item">
+          <p class="contacts-item-name">
+            <svg class="modal-contacts-svg">
+              <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-map"></use></svg
+            >Store
+          </p>
+          <a href="" class="contacts-item_link"
+            >456 Floral Ave, Sydney NSW 2000 AU</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <img
+      src="../img/contacts-image.jpg"
+      alt="photo of our worker serving a customer in the store"
+      class="contacts-img"
+    />
   </div>
 </section>
 
@@ -335,27 +419,55 @@
 </div>
 
     </main>
-    <footer>
+    <footer class="footer">
   <div class="container">
-    <a href="" class="footer-logo_link"
-      ><img src="" alt="" class="footer-logo"
-    /></a>
-    <ul class="footer-nav_list">
-      <li class="footer-item"><a href="" class="footer-link">About Us</a></li>
-      <li class="footer-item">
-        <a href="" class="footer-link">Bestsellers</a>
-      </li>
-      <li class="footer-item"><a href="" class="footer-link">Bouquets</a></li>
-      <li class="footer-item"><a href="" class="footer-link">Feedback</a></li>
-      <li class="footer-item"><a href="" class="footer-link">Contacts</a></li>
-    </ul>
-    <ul class="footer-social_list">
-      <li class="social-item"><a href="" class="social link"></a></li>
-      <li class="social-item"><a href="" class="social link"></a></li>
-      <li class="social-item"><a href="" class="social link"></a></li>
-    </ul>
+    <div class="footer-content">
+      <a href="index.html" class="footer-logo_link"
+        ><img
+          src="/UMT-markup-practice-Dymchevskyi/assets/logo-white-theme-sYcckaHZ.png"
+          alt="Flora Logo"
+          class="footer-logo"
+      /></a>
+      <ul class="footer-nav_list">
+        <li class="footer-item">
+          <a href="#about" class="footer-link">About Us</a>
+        </li>
+        <li class="footer-item">
+          <a href="#bestsellers" class="footer-link">Bestsellers</a>
+        </li>
+        <li class="footer-item">
+          <a href="#bouquets" class="footer-link">Bouquets</a>
+        </li>
+        <li class="footer-item">
+          <a href="#feedback" class="footer-link">Feedback</a>
+        </li>
+        <li class="footer-item">
+          <a href="#contacts" class="footer-link">Contacts</a>
+        </li>
+      </ul>
+      <ul class="footer-social_list">
+        <li class="social-item">
+          <a href="" class="social-link" aria-label="Follow us on Facebook"
+            ><svg class="modal-footer-svg">
+              <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-facebook"></use></svg
+          ></a>
+        </li>
+        <li class="social-item">
+          <a href="" class="social-link" aria-label="Follow us on Instagram"
+            ><svg class="modal-footer-svg">
+              <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-Instagram"></use></svg
+          ></a>
+        </li>
+        <li class="social-item">
+          <a href="" class="social-link" aria-label="Follow us on Twitter"
+            ><svg class="modal-footer-svg">
+              <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-X"></use></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
     <div class="copyright-container">
-      <p class="copyright-text">&copy; Flora. All rights reserved.</p>
+      <p class="copyright-text">&copy;2025 Flora. All rights reserved.</p>
     </div>
   </div>
 </footer>
