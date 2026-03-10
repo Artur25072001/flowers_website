@@ -1,0 +1,80 @@
+.bouqets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.bouqets-btn {
+  width: 100%;
+  height: 44px;
+  text-align: center;
+}
+.bouqets-item_img {
+  height: 296px;
+  border-radius: 16px;
+  background-color: bisque;
+  margin-bottom: 16px;
+}
+.bouqets-header {
+  font-size: 34px;
+  font-weight: 400;
+  font-family: 'Hanuman-Regular', serif;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.bouqets-text {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.bouqets-item_header {
+  font-family: 'Roboto-Medium', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+.bouqets-item_description {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.bouqets-item_price {
+  font-family: 'Roboto-Medium', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .bouqets-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .bouqets-item_img {
+    width: 100%;
+  }
+  .bouqets-item {
+    width: 340px;
+  }
+  .bouqets-btn {
+    width: 340px;
+  }
+  .bouqets-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 1440px) {
+  .bouqets-list {
+    row-gap: 64px;
+    column-gap: 32px;
+  }
+  .bouqets-item {
+    width: 296px;
+  }
+  .bouqets-btn {
+    width: 406px;
+  }
+}

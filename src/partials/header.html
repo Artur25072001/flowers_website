@@ -1,17 +1,61 @@
 <header class="header">
   <div class="container">
     <nav class="nav">
-      <a href="" class="nav-logo_link"
-        ><img src="" alt="" class="nav-logo"
-      /></a>
-      <ul class="nav-list">
-        <li class="nav-item"><a href="" class="nav-link">About Us</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Bestsellers</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Bouquets</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Feedback</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Contacts</a></li>
-      </ul>
-      <button type="button" class="nav-btn">Explore Bouquets</button>
+      <a href="index.html" class="nav-logo_link">
+        <img
+          src="../img/logo-white-theme.png"
+          alt="Flora Logo"
+          class="nav-logo"
+        />
+      </a>
+
+      <div class="nav-content">
+        <div class="menu-container">
+          <div class="menu-header">
+            <img
+              src="../img/logo-white-theme.png"
+              alt="Flora Logo"
+              class="nav-logo menu-logo"
+            />
+            <button type="button" class="modal-close_btn">
+              <svg class="modal-close-svg">
+                <use href="/img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#bestsellers" class="nav-link">Bestsellers</a>
+            </li>
+            <li class="nav-item">
+              <a href="#bouquets" class="nav-link">Bouquets</a>
+            </li>
+            <li class="nav-item">
+              <a href="#feedback" class="nav-link">Feedback</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+
+          <button type="button" class="nav-btn btn nav-btn--mobile">
+            Explore Bouquets
+          </button>
+        </div>
+        <button type="button" class="nav-btn btn nav-btn--desktop">
+          Explore Bouquets
+        </button>
+
+        <button type="button" class="modal-open_btn">
+          <svg class="modal-open-svg">
+            <use href="/img/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
     </nav>
   </div>
 </header>

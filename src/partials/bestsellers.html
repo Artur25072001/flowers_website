@@ -1,6 +1,6 @@
-<section class="bestsellers">
+<section class="bestsellers section" id="bestsellers">
   <div class="container">
-    <h2 class="bestseller-header"></h2>
+    <h2 class="bestseller-header">Top-Selling Bouquets</h2>
     <ul class="bestseller-list">
       <li class="bestseller-item">
         <img src="" alt="" class="bestseller-item_img" />
@@ -39,20 +39,27 @@
         <p class="bestseller-item_price">&dollar;38</p>
       </li>
     </ul>
-    <div class="btn-slider_container">
-      <button type="button" class="btn-slider"></button
-      ><button type="button" class="btn-slider"></button
-      ><button type="button" class="btn-slider"></button
-      ><button type="button" class="btn-slider"></button
-      ><button type="button" class="btn-slider"></button>
-    </div>
-    <div class="btn-arrow_container">
-      <button type="button" class="btn-arrow">
-        <svg></svg>
-      </button>
-      <button type="button" class="btn-arrow">
-        <svg></svg>
-      </button>
+    <div class="navigation-container">
+      <ul class="slide-list">
+        <li class="slide-item slide-active"></li>
+        <li class="slide-item"></li>
+        <li class="slide-item"></li>
+        <li class="slide-item"></li>
+        <li class="slide-item"></li>
+        <li class="slide-item"></li>
+      </ul>
+      <div class="btn-arrow_container">
+        <button type="button" class="btn-arrow">
+          <svg class="arrow-svg">
+            <use href="/img/sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button type="button" class="btn-arrow">
+          <svg class="arrow-svg">
+            <use href="/img/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>

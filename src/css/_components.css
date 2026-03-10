@@ -1,0 +1,26 @@
+.btn {
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto-Medium', sans-serif;
+  background: linear-gradient(100deg, #e8e81c 0%, #42ed13 100%);
+}
+.btn-arrow_container {
+  display: flex;
+  gap: 16px;
+}
+.btn-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+  background-color: transparent;
+  border: 1px solid rgba(3, 12, 1, 0.15);
+}
+.arrow-svg {
+  width: 14px;
+  height: 14px;
+  fill: #030c01;
+}

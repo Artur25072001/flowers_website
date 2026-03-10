@@ -1,3 +1,18 @@
+/* --- IMPORTS */
+
+@import url('./_header.css');
+@import url('./_hero.css');
+@import url('./_about.css');
+@import url('./_bestsellers.css');
+@import url('./_bouqets.css');
+@import url('./_feedback.css');
+@import url('./_contacts.css');
+@import url('./_footer.css');
+@import url('./_modal.css');
+
+/* --- COMPONENTS --- */
+@import url('./_components.css');
+
 /* --- FONTS --- */
 
 @font-face {
@@ -34,12 +49,16 @@ body {
   font-family: 'Roboto-Regular', sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  color: #030c01;
 }
 
 .container {
   max-width: 375px;
   margin: 0 auto;
   padding: 0 20px;
+}
+.section {
+  padding: 64px 0;
 }
 
 @media (min-width: 768px) {
@@ -52,6 +71,10 @@ body {
   .container {
     max-width: 1440px;
     padding: 0 80px;
+  }
+
+  .section {
+    padding: 92px 0;
   }
 }
 
@@ -91,18 +114,3 @@ img {
 a {
   text-decoration: none;
 }
-
-/* --- IMPORTS */
-
-@import './header.css';
-@import './hero.css';
-@import './about.css';
-@import './bestsellers.css';
-@import './bouqets.css';
-@import './feedback.css';
-@import './contacts.css';
-@import './footer.css';
-@import './modal.css';
-
-/* --- COMPONENTS --- */
-@import './components.css';
