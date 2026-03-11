@@ -136,6 +136,7 @@
   height: 40px;
   border-radius: 12px;
   border: 1px solid rgba(3, 12, 1, 0.15);
+  transition: all 0.3s ease;
 }
 .order-modal_textarea {
   margin-bottom: 24px;
@@ -144,6 +145,21 @@
   height: 120px;
   border-radius: 12px;
   border: 1px solid rgba(3, 12, 1, 0.15);
+  transition: all 0.3s ease;
+}
+.order-modal_textarea:hover::placeholder,
+.order-modal_input:hover::placeholder {
+  color: rgba(3, 12, 1, 1);
+}
+.order-modal_textarea:focus,
+.order-modal_input:focus {
+  color: rgba(3, 12, 1, 1);
+  border: 1px solid rgba(3, 12, 1, 1);
+}
+.order-modal_textarea:invalid,
+.order-modal_input:invalid {
+  color: #af0000;
+  border: 1px solid #af0000;
 }
 .order-modal_btn {
   height: 44px;

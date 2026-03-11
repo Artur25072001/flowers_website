@@ -3,7 +3,25 @@
   border: none;
   font-family: 'Roboto-Medium', sans-serif;
   background: linear-gradient(100deg, #e8e81c 0%, #42ed13 100%);
+  transition: all 0.3s ease;
 }
+.btn:hover {
+  opacity: 0.5;
+}
+.btn:disabled {
+  opacity: 0.2;
+}
+.btn:active {
+  background: #4e544d;
+  color: #fff;
+  opacity: 1;
+}
+.btn:active .nav-btn_link,
+.btn:active .hero-btn_link {
+  color: #fff;
+  opacity: 1;
+}
+
 .btn-arrow_container {
   display: flex;
   gap: 16px;

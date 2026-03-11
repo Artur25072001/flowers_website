@@ -35,6 +35,17 @@
 }
 .contacts-item_link {
   color: #030c01;
+  transition: 0.4s opacity ease-in-out;
+  opacity: 1;
+}
+.contacts-item_link:hover {
+  opacity: 0.6;
+}
+.contacts-item_link:active {
+  opacity: 0.4;
+}
+.contacts-item_link:disabled {
+  opacity: 0.2;
 }
 .modal-contacts-svg {
   width: 19px;

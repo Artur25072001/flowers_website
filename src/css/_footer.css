@@ -32,6 +32,18 @@
 }
 .footer-link {
   color: #030c01;
+  transition: 0.4s opacity ease-in-out;
+  opacity: 1;
+}
+
+.footer-link:hover {
+  opacity: 0.6;
+}
+.footer-link:active {
+  opacity: 0.4;
+}
+.footer-link:disabled {
+  opacity: 0.2;
 }
 .modal-footer-svg {
   width: 40px;
