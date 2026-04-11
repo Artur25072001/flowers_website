@@ -9,10 +9,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script type="module" crossorigin src="/UMT-markup-practice-Dymchevskyi/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/UMT-markup-practice-Dymchevskyi/assets/index-jcawpFTV.css">
+    <link rel="stylesheet" crossorigin href="/UMT-markup-practice-Dymchevskyi/assets/index-DuMc3vUR.css">
   </head>
-  <body>
+  <body class="body">
     <header class="header">
   <div class="container">
     <nav class="nav">
@@ -91,7 +92,7 @@
 </section>
 
       <section class="about section" id="about">
-  <div class="container about-container">
+  <div class="container about-container" data-aos="fade-up">
     <div class="about-content">
       <svg class="about-svg" aria-hidden="true">
         <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-flower-logo"></use>
@@ -114,7 +115,7 @@
 </section>
 
       <section class="bestsellers section" id="bestsellers">
-  <div class="container">
+  <div class="container" data-aos="fade-right">
     <h2 class="bestseller-header">Top-Selling Bouquets</h2>
     <ul class="bestseller-list">
       <li class="bestseller-item product-open">
@@ -306,7 +307,7 @@
 </section>
 
       <section class="bouqets section" id="bouquets">
-  <div class="container bouqets-container">
+  <div class="container bouqets-container" data-aos="fade-left">
     <h2 class="bouqets-header">Bouquets</h2>
     <p class="bouqets-text">
       Explore our stunning selection of fresh flower bouquets.
@@ -390,7 +391,7 @@
 </section>
 
       <section class="feedback section" id="feedback">
-  <div class="container feedback-container">
+  <div class="container feedback-container" data-aos="zoom-in">
     <h2 class="feedback-header">What our clients says</h2>
     <ul class="feedback-list">
       <li class="feedback-item">
@@ -464,12 +465,12 @@
       </li>
     </ul>
     <div class="btn-arrow_container feedback-arrow_container">
-      <button type="button" class="btn-arrow">
+      <button type="button" class="btn-arrow feedback-arrow_left">
         <svg class="arrow-svg">
           <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-arrow-left"></use>
         </svg>
       </button>
-      <button type="button" class="btn-arrow">
+      <button type="button" class="btn-arrow feedback-arrow_right">
         <svg class="arrow-svg">
           <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-arrow-right"></use>
         </svg>
@@ -478,7 +479,7 @@
   </div>
 </section>
 
-      <section class="contacts section" id="contacts">
+      <section class="contacts section" data-aos="fade-up" id="contacts">
   <div class="container contacts-container">
     <div class="contacts-content">
       <div class="contacts-text-container">
@@ -633,19 +634,19 @@
       <ul class="footer-social_list">
         <li class="social-item">
           <a href="" class="social-link" aria-label="Follow us on Facebook"
-            ><svg class="modal-footer-svg">
+            ><svg class="footer-svg_link">
               <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-facebook"></use></svg
           ></a>
         </li>
         <li class="social-item">
           <a href="" class="social-link" aria-label="Follow us on Instagram"
-            ><svg class="modal-footer-svg">
+            ><svg class="footer-svg_link">
               <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-Instagram"></use></svg
           ></a>
         </li>
         <li class="social-item">
           <a href="" class="social-link" aria-label="Follow us on Twitter"
-            ><svg class="modal-footer-svg">
+            ><svg class="footer-svg_link">
               <use href="/UMT-markup-practice-Dymchevskyi/assets/sprite-esBRG5_l.svg#icon-X"></use></svg
           ></a>
         </li>
@@ -657,5 +658,15 @@
   </div>
 </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // Инициализируем после того, как браузер построит дерево
+      window.addEventListener('load', () => {
+        AOS.init({
+          duration: 500, // Чтобы точно заметить анимацию (1 сек)
+          once: true, // Анимировать один раз
+        });
+      });
+    </script>
   </body>
 </html>
