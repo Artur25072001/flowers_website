@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -28,11 +29,10 @@
     <script type="module" src="./js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      // Инициализируем после того, как браузер построит дерево
       window.addEventListener('load', () => {
         AOS.init({
-          duration: 500, // Чтобы точно заметить анимацию (1 сек)
-          once: true, // Анимировать один раз
+          duration: 500,
+          once: true,
         });
       });
     </script>
