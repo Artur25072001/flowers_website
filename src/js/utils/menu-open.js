@@ -4,6 +4,7 @@ export function initMenu() {
   const menuCloseBtn = document.querySelector('.menu-close_btn');
   const mainBody = document.querySelector('body');
   const navLinks = document.querySelectorAll('.nav-link');
+  const menuBtnMobile = document.querySelector('.nav-btn--mobile');
 
   menuCloseBtn.addEventListener('click', () => {
     MenuContainer.classList.remove('is-active');
@@ -20,5 +21,10 @@ export function initMenu() {
       MenuContainer.classList.remove('is-active');
       mainBody.classList.remove('no-scroll');
     });
+  });
+
+  menuBtnMobile.addEventListener('click', () => {
+    MenuContainer.classList.remove('is-active');
+    mainBody.classList.remove('no-scroll');
   });
 }
