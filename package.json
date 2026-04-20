@@ -1,11 +1,11 @@
 {
-  "name": "fitnes_website",
+  "name": "flowers_website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base /fitnes_website/",
+    "build": "vite build --base /flowers_website/",
     "preview": "vite preview"
   },
   "devDependencies": {
